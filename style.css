@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #0077cc, #00cc77);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    width: 250px; /* Ancho fijo para las tarjetas */
+    transition: transform 0.10s ease, box-shadow 0.10s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para el submenú */
+.submenu {
+    margin-top: 10px;
+}
+
+.submenu-toggle {
+    background-color: #0077cc; /* Color del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.submenu-toggle:hover {
+    background-color: #005fa3; /* Color al pasar el ratón */
+}
+
+.submenu-list {
+    list-style-type: none; /* Sin viñetas */
+    padding-left: 0; /* Sin espaciado a la izquierda */
+}
+
+.submenu-list li {
+    margin-top: 5px; /* Espaciado entre elementos */
+}
+
+.submenu-list li a {
+    display: block; /* Hace que el enlace ocupe todo el ancho */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    color: #0077cc; /* Color del texto del enlace */
+    text-decoration: none; /* Sin subrayado */
+    padding: 8px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+.submenu-list li a:hover {
+    background-color: #00cc77; /* Color de fondo al pasar el ratón */
+    color: white; /* Cambia el color del texto al pasar el ratón */
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}

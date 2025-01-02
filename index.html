@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Español</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>Aprende Español</h1>
+    </header>
+
+    <main>
+        <div class="card" id="principiante">
+            <h2>Principiante</h2>
+            <div class="submenu">
+                <button class="submenu-toggle" onclick="toggleSubmenu('subPrincipiante')">Lecciones</button>
+                <ul id="subPrincipiante" class="hidden submenu-list">
+                    <li><a href=" /Leccion 1.html">Saludos y Presentaciones</a></li>
+                    <li><a href="#">Números y Colores</a></li>
+                    <li><a href="#">Días de la Semana</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card" id="medio">
+            <h2>Medio</h2>
+            <div class="submenu">
+                <button class="submenu-toggle" onclick="toggleSubmenu('subMedio')">Lecciones</button>
+                <ul id="subMedio" class="hidden submenu-list">
+                    <li><a href="#">Verbos en Presente</a></li>
+                    <li><a href="#">Adjetivos y Pronombres</a></li>
+                    <li><a href="#">Conversaciones Cotidianas</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card" id="avanzado">
+            <h2>Avanzado</h2>
+            <div class="submenu">
+                <button class="submenu-toggle" onclick="toggleSubmenu('subAvanzado')">Lecciones</button>
+                <ul id="subAvanzado" class="hidden submenu-list">
+                    <li><a href="#">Tiempos Verbales Complejos</a></li>
+                    <li><a href="#">Literatura Española</a></li>
+                    <li><a href="#">Debates y Opiniones</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aprende Español. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="/main.js"></script>
+</body>
+</html>

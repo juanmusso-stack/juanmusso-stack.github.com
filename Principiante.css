@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif; /* Usar Roboto como fuente principal */
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #0077cc, #00cc77);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.introduction,
+.structure,
+.greetings {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: transform 0.2s; /* Transición suave para el efecto hover */
+}
+
+.introduction:hover,
+.structure:hover,
+.greetings:hover {
+    transform: scale(1.02); /* Efecto de aumento al pasar el mouse */
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    color: #0077cc; /* Color para los títulos principales */
+}
+
+h3 {
+    color: #00cc77; /* Color para subtítulos */
+}
+
+.highlight {
+    background-color: #ffeb3b; /* Color amarillo para resaltar texto */
+}
+
+.bulleted-list,
+.example-list {
+    list-style-type: disc; /* Tipo de viñetas */
+    padding-left: 20px; /* Espaciado a la izquierda */
+}
+
+.bulleted-list li:hover,
+.example-list li:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco claro al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.english-highlight {
+    color: #ff5722; /* Color naranja para el texto en inglés */
+    font-style: italic; /* Texto en cursiva */
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo blanco semi-transparente */
+    padding: 5px; /* Espaciado interno */
+    border-left: 4px solid #ff5722; /* Línea a la izquierda para destacar */
+    margin-top: 5px; /* Espaciado superior */
+}
+
+.greetings-list {
+    background-color: rgba(240, 240, 240, 0.95); /* Fondo claro con un poco más de opacidad */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno aumentado */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    margin-bottom: 20px; /* Espaciado inferior */
+    transition: transform 0.2s; /* Transición suave para el efecto hover */
+}
+
+.greetings-list:hover {
+    transform: scale(1.02); /* Efecto de aumento al pasar el mouse */
+}
+
+.greetings-list li {
+    margin-bottom: 15px; /* Espaciado entre elementos de la lista */
+}
+
+.greetings-list strong {
+    color: #0077cc; /* Color azul para los títulos */
+    font-size: 1.1em; /* Tamaño de fuente ligeramente mayor */
+}
+
+.greetings-list span {
+    background-color: #ffeb3b; /* Fondo amarillo para el texto en paréntesis */
+    padding: 3px 6px; /* Espaciado interno del resaltado aumentado */
+    border-radius: 4px; /* Bordes redondeados del resaltado */
+}
+
+.greetings-list li:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco claro al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+/* despedida*/
+
+.farewell-list {
+    background-color: rgba(240, 240, 240, 0.95); /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.farewell-list li {
+    margin-bottom: 15px; /* Espaciado entre elementos de la lista */
+}
+
+.farewell-list strong {
+    color: #0077cc; /* Color azul para los títulos */
+}
+
+.farewell-list span {
+    background-color: #ffeb3b; /* Fondo amarillo para el texto en paréntesis */
+    padding: 2px 5px; /* Espaciado interno del resaltado */
+    border-radius: 4px; /* Bordes redondeados del resaltado */
+}
+
+.example-list {
+    list-style-type: none; /* Sin viñetas */
+    padding-left: 0; /* Sin espaciado a la izquierda */
+}
+
+.example-list li {
+    margin-bottom: 10px; /* Espaciado entre ejemplos */
+}
+
+/* familia*/
+
+.family-vocabulary {
+    background-color: rgba(240, 240, 240, 0.95); /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.family-vocabulary li {
+    margin-bottom: 15px; /* Espaciado entre elementos de la lista */
+}
+
+.family-vocabulary strong {
+    color: #0077cc; /* Color azul para los títulos */
+}
+
+.family-vocabulary span {
+    background-color: #ffeb3b; /* Fondo amarillo para el texto en paréntesis */
+    padding: 2px 5px; /* Espaciado interno del resaltado */
+    border-radius: 4px; /* Bordes redondeados del resaltado */
+}
+
+.example-list {
+    list-style-type: none; /* Sin viñetas */
+    padding-left: 0; /* Sin espaciado a la izquierda */
+}
+
+.example-list li {
+    margin-bottom: 10px; /* Espaciado entre ejemplos */
+}
+/* re cuadro*/
+
+.family-vocabulary-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    border: 2px solid #0077cc; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px auto; /* Margen superior e inferior y centrado horizontal */
+    max-width: 600px; /* Ancho máximo del cuadro */
+}
+
+.family-vocabulary {
+    list-style-type: none; /* Sin viñetas */
+    padding-left: 0; /* Sin espaciado a la izquierda */
+}
+
+.family-vocabulary li {
+    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+}
+
+.family-vocabulary strong {
+    color: #0077cc; /* Color azul para los términos en español */
+}
+/* introduccion al MI*/
+
+.introduction-examples {
+    background-color: rgba(240, 240, 240, 0.95); /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.introduction-examples li {
+    margin-bottom: 15px; /* Espaciado entre elementos de la lista */
+}
+
+.introduction-examples strong {
+    color: #0077cc; /* Color azul para los títulos */
+}
+
+.family-vocabulary {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.family-vocabulary li {
+    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+}
+.examples-list {
+    background-color: rgba(240, 240, 240, 0.95); /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.examples-list li {
+    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+}
+
+.family-vocabulary {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.family-vocabulary li {
+    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+}
